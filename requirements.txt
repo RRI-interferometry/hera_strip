@@ -1,0 +1,6 @@
+pygdsm
+healpy
+numpy
+matplotlib
+astropy
+bokeh
