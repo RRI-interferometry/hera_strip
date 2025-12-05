@@ -2,7 +2,7 @@
 HERA Strip - A tool for simulating and visualizing diffuse sky models for HERA observations.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 from .sky_model import (
     SkyMapGenerator,

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hera_strip"
-version = "1.0.0"
+version = "1.0.1"
 description = "HERA strip: A tool for simulating and visualizing diffuse sky models for HERA observations."
 readme = "README.md"
 requires-python = ">=3.10"
