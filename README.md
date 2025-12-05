@@ -14,10 +14,16 @@
 
 ## Installation
 
+### From PyPI
+
+```bash
+pip install hera-strip
+```
+
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/hera_strip.git
+git clone https://github.com/RRI-interferometry/hera_strip.git
 cd hera_strip
 pip install -e .
 ```
@@ -196,8 +202,17 @@ simulator.run_simulation()
 ### Using Individual Components
 
 ```python
-from herastrip import SkyMapGenerator, PointSourceCatalog, Plotter
-from herastrip.beam import BeamProcessor
+from herastrip import (
+    SkyMapGenerator,
+    PointSourceCatalog,
+    BeamProcessor,
+    Plotter,
+    calculate_hera_fov_radius,
+)
+from astropy.coordinates import EarthLocation
+
+# HERA location
+location = EarthLocation(lat=-30.7, lon=21.4)
 
 # Generate sky map
 sky_gen = SkyMapGenerator(frequency=80, model="gsm2008")
@@ -210,6 +225,10 @@ sources = catalog.get_sources(max_sources=500)
 # Load beam
 beam = BeamProcessor("./beam.fits", frequency_mhz=80)
 beam_data = beam.transform_to_radec(location, lst_hours=18.0)
+
+# Calculate FOV for a given frequency
+fov_radius = calculate_hera_fov_radius(frequency_mhz=80)
+print(f"FOV radius at 80 MHz: {fov_radius:.1f}°")
 ```
 
 ## HERA Beam Physics

@@ -33,9 +33,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/kartikmandar/hera_strip"
-Repository = "https://github.com/kartikmandar/hera_strip.git"
-Issues = "https://github.com/kartikmandar/hera_strip/issues"
+Homepage = "https://github.com/RRI-interferometry/hera_strip"
+Repository = "https://github.com/RRI-interferometry/hera_strip.git"
+Issues = "https://github.com/RRI-interferometry/hera_strip/issues"
 
 [project.scripts]
 hera-strip = "herastrip.main:main"

@@ -16,5 +16,30 @@ from .simulation import (
     calculate_hera_fov_radius,
     HERA_DISH_DIAMETER,
     HERA_BEAM_COEFFICIENT,
+    SPEED_OF_LIGHT,
 )
 from .plotting import Plotter
+from .beam import BeamProcessor
+
+__all__ = [
+    # Version
+    "__version__",
+    # Main simulator
+    "HeraStripSimulator",
+    # Sky models
+    "SkyMapGenerator",
+    "SkyH5MapGenerator",
+    "PointSourceCatalog",
+    "load_skyh5_file",
+    "SKY_MODELS",
+    # Beam processing
+    "BeamProcessor",
+    # Plotting
+    "Plotter",
+    # Constants
+    "HERA_DISH_DIAMETER",
+    "HERA_BEAM_COEFFICIENT",
+    "SPEED_OF_LIGHT",
+    # Utilities
+    "calculate_hera_fov_radius",
+]
