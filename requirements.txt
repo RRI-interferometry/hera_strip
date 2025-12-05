@@ -1,6 +1,9 @@
-pygdsm
-healpy
 numpy
-matplotlib
 astropy
+healpy
+pygdsm
 bokeh
+matplotlib
+scipy
+pyradiosky
+pyuvdata

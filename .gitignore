@@ -38,3 +38,12 @@ venv.bak/
 # Output files
 output/
 *.html
+
+# Data files (large, not tracked)
+*.fits
+*.skyh5
+*.hdf5
+*.h5
+
+# macOS resource forks
+._*
